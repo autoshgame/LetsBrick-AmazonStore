@@ -1522,7 +1522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9ea6f2ab12e9b646ab81d9a26b59a16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalTime: 400
+  timeOfLevel: {fileID: 11400000, guid: 66c60ce08fea4d345a2ea83d24455c2c, type: 2}
 --- !u!1 &966437752
 GameObject:
   m_ObjectHideFlags: 0

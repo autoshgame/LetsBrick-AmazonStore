@@ -62,7 +62,7 @@ public class Ball : MonoBehaviour
     void CheckGameWinner()
     {
         //Debug.Log(bricksThatAreColapsed);
-        if (bricksThatAreColapsed >= brickLevel.test)
+        if (bricksThatAreColapsed >= brickLevel.level1)
         {
             firstGame_GameManager.SetGameWinner();
         }

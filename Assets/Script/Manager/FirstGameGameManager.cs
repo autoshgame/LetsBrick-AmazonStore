@@ -7,7 +7,9 @@ public class FirstGameGameManager : MonoBehaviour
     private PlayerStat playerStat;
     private FirstGameUIManager firstGame_UIManager;
 
-    [SerializeField] int totalTime = 420;
+    [SerializeField] private TotalTime timeOfLevel = default;
+
+    private int totalTime;
 
     bool isGamePaused = false;
     bool isGameOver = false;
@@ -26,6 +28,9 @@ public class FirstGameGameManager : MonoBehaviour
 
         //Set timescale to 1
         Time.timeScale = 1;
+
+
+        totalTime = timeOfLevel.level1;
     }
 
 
