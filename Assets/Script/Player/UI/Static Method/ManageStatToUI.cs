@@ -2,6 +2,8 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+
+
 public class ManageStatToUI
 {
     public static void ChangeHpToUIImage(int quantityOf_Hp, Sprite sprite, List<Image> hpImage)

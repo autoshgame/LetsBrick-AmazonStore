@@ -6,7 +6,6 @@ public class FirstGameGameManager : MonoBehaviour
     private Ball ball;
     private PlayerStat playerStat;
     private FirstGameUIManager firstGame_UIManager;
-    private FirstGameSceneManager firstGame_SceneManager;
 
     [SerializeField] int totalTime = 420;
 
@@ -20,7 +19,6 @@ public class FirstGameGameManager : MonoBehaviour
         ball = GameObject.FindGameObjectWithTag("Ball").GetComponent<Ball>();
         playerStat = GameObject.FindGameObjectWithTag("PlayerStat").GetComponent<PlayerStat>();
         firstGame_UIManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<FirstGameUIManager>();
-        firstGame_SceneManager = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<FirstGameSceneManager>();
 
 
         //Methods to start game
@@ -65,7 +63,7 @@ public class FirstGameGameManager : MonoBehaviour
 
     public void RestartGame()
     {
-        firstGame_SceneManager.RestartScene();
+        FirstGameSceneManager.Instance.RestartScene();
     }
 
 

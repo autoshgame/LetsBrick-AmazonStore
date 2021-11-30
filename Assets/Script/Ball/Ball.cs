@@ -7,6 +7,9 @@ public class Ball : MonoBehaviour
     private PlayerStat playerStat;
     private FirstGameGameManager firstGame_GameManager;
 
+    [SerializeField] private BrickLevel brickLevel = default;
+    
+
     int bricksThatAreColapsed = 0;
 
 
@@ -59,7 +62,7 @@ public class Ball : MonoBehaviour
     void CheckGameWinner()
     {
         //Debug.Log(bricksThatAreColapsed);
-        if (bricksThatAreColapsed >= AmountOfBrick.testLevel)
+        if (bricksThatAreColapsed >= brickLevel.test)
         {
             firstGame_GameManager.SetGameWinner();
         }

@@ -69,7 +69,7 @@ public class PlayerMoving : MonoBehaviour
 
     void PreventGetingOutOfScreen()
     {
-        // left bound and right bound  have been calculated
+        // left bound and right bound have been calculated
         float leftBound = -2.54f;
         float rightBound = 2.54f;
 
