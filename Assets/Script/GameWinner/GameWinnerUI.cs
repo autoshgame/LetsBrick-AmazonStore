@@ -4,9 +4,6 @@ using UnityEngine.UI;
 
 public class GameWinnerUI : MonoBehaviour
 {
-    [SerializeField] private Button restartButton;
-    [SerializeField] private Button menuButton;
-
     [SerializeField] private TextMeshProUGUI finalScoreText;
 
 

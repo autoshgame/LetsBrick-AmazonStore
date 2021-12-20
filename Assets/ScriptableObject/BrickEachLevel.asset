@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ea3906822f49ae449013fc3cd1332fc, type: 3}
   m_Name: BrickEachLevel
   m_EditorClassIdentifier: 
-  level1: 60
+  level1: 66
   level2: 40
   level3: 40
   level4: 60
-  test: 20
+  test: 39

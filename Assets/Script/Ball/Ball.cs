@@ -1,5 +1,7 @@
 using UnityEngine;
 
+
+[RequireComponent(typeof(Rigidbody2D))]
 public class Ball : MonoBehaviour
 {
     private Rigidbody2D ballRigidBody2D;
@@ -42,26 +44,26 @@ public class Ball : MonoBehaviour
     public void AddBeginForce()
     {
         ballRigidBody2D = this.GetComponent<Rigidbody2D>();
-        ballRigidBody2D.AddForce(new Vector2(Random.Range(0, 100), 400));    //400 is the number have been calculated to satisfy the player
+        ballRigidBody2D.AddForce(new Vector2(Random.Range(0, 100), 400));   //400 is the number have been calculated to satisfy the player
     }
 
 
     public void ResetBallPositionAndVelocity()
     {
-        this.transform.position = player.transform.position + new Vector3(0, 1, 0); //1 is the distance between Ball and Player in the frist time
+        this.transform.position = player.transform.position + new Vector3(0, 1, 0);     //1 is the distance between Ball and Player in the frist time
         ballRigidBody2D.velocity = Vector2.zero;
     }
 
 
     public void AddCollapsedBrick()
     {
-        bricksThatAreColapsed += 1;
+        bricksThatAreColapsed += 1;   //Whenever touch a brick, incrase the collapsed brick by 1 unit
     }
 
 
     void CheckGameWinner()
     {
-        //Debug.Log(bricksThatAreColapsed);
+
         if (bricksThatAreColapsed >= brickLevel.level1)
         {
             firstGame_GameManager.SetGameWinner();

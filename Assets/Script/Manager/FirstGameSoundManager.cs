@@ -6,9 +6,9 @@ public class FirstGameSoundManager : MonoBehaviour
     [SerializeField] private AudioClip winStateClip;
     [SerializeField] private AudioClip loseStateClip;
     [SerializeField] private AudioClip decreasingHealthClip;
-    public AudioSource firstGameAudioSource;
+    private AudioSource firstGameAudioSource;
 
-    private static FirstGameSoundManager instance;
+    private static FirstGameSoundManager instance;  //instance is the one, without the second
 
     public static FirstGameSoundManager Instance
     {
@@ -48,14 +48,14 @@ public class FirstGameSoundManager : MonoBehaviour
 
     public void PlayPlayerLoseSound()
     {
-        firstGameAudioSource.PlayDelayed(5f);
+        firstGameAudioSource.PlayDelayed(5f);   //5f is the duration of the following audio clip
         firstGameAudioSource.PlayOneShot(loseStateClip);
     }
 
 
     public void PlayPlayerWinSound()
     {
-        firstGameAudioSource.PlayDelayed(3f);
+        firstGameAudioSource.PlayDelayed(3f);   //3f is the duration of the following audio clip
         firstGameAudioSource.PlayOneShot(winStateClip);
     }
 

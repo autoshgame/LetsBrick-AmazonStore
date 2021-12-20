@@ -3,7 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName ="level", menuName ="level/numberOfBrick", order=1)]
 public class BrickLevel : ScriptableObject
 {
-    [Header("Play")]
+    [Header("Play mode")]
     public int level1;
     public int level2;
     public int level3;
@@ -11,6 +11,6 @@ public class BrickLevel : ScriptableObject
 
     [Space(5)]
 
-    [Header("Test")]
+    [Header("Test mode")]
     public int test;
 }

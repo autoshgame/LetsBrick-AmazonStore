@@ -25,8 +25,6 @@ public class PlayerMoving : MonoBehaviour
         {
             Touch touch = Input.GetTouch(0);
 
-            Debug.Log(touch.position);
-
             Vector2 touchPosition = mainCamera.ScreenToWorldPoint(touch.position);
 
             // -7 and 0 is the limitation of touch, you can not go futher
@@ -49,15 +47,14 @@ public class PlayerMoving : MonoBehaviour
         {
             Vector2 touchPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
 
-            //Debug.Log(touchPosition);
             // -7 and 0 is the limitation of touch, you can not go futher
             if (touchPosition.y >= -7 && touchPosition.y <= 0)
             {
-                if (touchPosition.x > 0)
+                if (touchPosition.x > 0)   //in the left of x axis
                 {
                     this.transform.Translate(Vector2.right * Time.deltaTime * speed);
                 }
-                else if (touchPosition.x <= 0)
+                else if (touchPosition.x <= 0)    //in the right of x axis
                 {
                     this.transform.Translate(Vector2.left * Time.deltaTime * speed);
                 }
