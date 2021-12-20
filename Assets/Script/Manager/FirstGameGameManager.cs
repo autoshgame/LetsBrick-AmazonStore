@@ -36,7 +36,7 @@ public class FirstGameGameManager : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(ICountingTimeAndGameOver());
+        StartCoroutine(ICountingTimeToGameOver());
     }
 
 
@@ -108,7 +108,13 @@ public class FirstGameGameManager : MonoBehaviour
     }
 
 
-    IEnumerator ICountingTimeAndGameOver()
+    public void MoveToMenu()
+    {
+        FirstGameSceneManager.Instance.MoveToMainMenu();
+    }
+
+
+    IEnumerator ICountingTimeToGameOver()
     {
         while (totalTime > 0 && !isGameWinner && !isGameOver)
         {

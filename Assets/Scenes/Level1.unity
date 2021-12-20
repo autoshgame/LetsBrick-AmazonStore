@@ -268,7 +268,7 @@ GameObject:
   - component: {fileID: 74405921}
   - component: {fileID: 74405922}
   m_Layer: 0
-  m_Name: Block
+  m_Name: Right_Block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -282,7 +282,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 74405920}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.01, y: 1.2128353, z: 13.674863}
+  m_LocalPosition: {x: 0.13, y: -0.11, z: 13.674863}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 544202052}
@@ -301,7 +301,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.4700867, y: -0.96017647}
+  m_Offset: {x: 0, y: -0.125458}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -312,7 +312,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7388408, y: 11.851187}
+  m_Size: {x: 0.7388408, y: 12.271296}
   m_EdgeRadius: 0
 --- !u!1 &174137813
 GameObject:
@@ -324,8 +324,8 @@ GameObject:
   m_Component:
   - component: {fileID: 174137814}
   m_Layer: 0
-  m_Name: ------ Manager ------
-  m_TagString: Untagged
+  m_Name: =======MANAGER=======
+  m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -426,9 +426,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1901355378}
-        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: Restart
+      - m_Target: {fileID: 870625612}
+        m_TargetAssemblyTypeName: FirstGameGameManager, Assembly-CSharp
+        m_MethodName: RestartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -663,8 +663,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c0b1d7793e2144bb9e0717fcb7a90d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  restartButton: {fileID: 213011717}
-  menuButton: {fileID: 966437754}
   finalScoreText: {fileID: 13734476}
 --- !u!1 &519420028
 GameObject:
@@ -760,7 +758,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &544202051
 GameObject:
@@ -772,7 +770,7 @@ GameObject:
   m_Component:
   - component: {fileID: 544202052}
   m_Layer: 0
-  m_Name: StopPlayer
+  m_Name: Block_StopBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -831,7 +829,7 @@ Transform:
   - {fileID: 638274111}
   - {fileID: 544202052}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &670300669
 GameObject:
@@ -915,9 +913,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1901355378}
-        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: Restart
+      - m_Target: {fileID: 870625612}
+        m_TargetAssemblyTypeName: FirstGameGameManager, Assembly-CSharp
+        m_MethodName: RestartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1382,8 +1380,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1253364221}
-  m_RootOrder: 2
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &798651330
 GameObject:
@@ -1433,7 +1431,7 @@ GameObject:
   - component: {fileID: 821735827}
   - component: {fileID: 821735828}
   m_Layer: 0
-  m_Name: Block (2)
+  m_Name: Up_Block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1446,13 +1444,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 821735826}
-  m_LocalRotation: {x: -0, y: -0, z: -0.008182325, w: 0.99996656}
-  m_LocalPosition: {x: -3.77, y: 5.71, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.77, y: 5.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 544202052}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.938}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &821735828
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1466,7 +1464,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.004514694, y: -0.035282373}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1477,7 +1475,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.8508687, y: 0.69408417}
+  m_Size: {x: 6.712925, y: 0.7646489}
   m_EdgeRadius: 0
 --- !u!1 &870625610
 GameObject:
@@ -1507,8 +1505,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1253364221}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &870625612
 MonoBehaviour:
@@ -1523,6 +1521,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeOfLevel: {fileID: 11400000, guid: 66c60ce08fea4d345a2ea83d24455c2c, type: 2}
+--- !u!1 &916478511
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 916478512}
+  m_Layer: 0
+  m_Name: =======UI=======
+  m_TagString: EditorOnly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &916478512
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916478511}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &966437752
 GameObject:
   m_ObjectHideFlags: 0
@@ -1605,8 +1633,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1901355378}
-        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
+      - m_Target: {fileID: 870625612}
+        m_TargetAssemblyTypeName: FirstGameGameManager, Assembly-CSharp
         m_MethodName: MoveToMenu
         m_Mode: 1
         m_Arguments:
@@ -1683,8 +1711,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1253364221}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &972152766
 MonoBehaviour:
@@ -1934,7 +1962,7 @@ RectTransform:
   - {fileID: 457888163}
   - {fileID: 783757086}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2098,8 +2126,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1901355378}
-        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
+      - m_Target: {fileID: 870625612}
+        m_TargetAssemblyTypeName: FirstGameGameManager, Assembly-CSharp
         m_MethodName: MoveToMenu
         m_Mode: 1
         m_Arguments:
@@ -2275,9 +2303,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 155bce6833e0aac4ab84433e7ddda264, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  restartButton: {fileID: 670300671}
-  menuButton: {fileID: 966437754}
-  totalPoints: {fileID: 0}
 --- !u!1 &1110815178
 GameObject:
   m_ObjectHideFlags: 0
@@ -2396,39 +2421,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1225762369}
   m_CullTransparentMesh: 1
---- !u!1 &1253364220
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1253364221}
-  m_Layer: 0
-  m_Name: Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1253364221
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1253364220}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 870625611}
-  - {fileID: 972152765}
-  - {fileID: 784921067}
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1339626417
 GameObject:
   m_ObjectHideFlags: 0
@@ -2586,9 +2578,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1901355378}
-        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: Restart
+      - m_Target: {fileID: 870625612}
+        m_TargetAssemblyTypeName: FirstGameGameManager, Assembly-CSharp
+        m_MethodName: RestartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2961,7 +2953,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1579487363}
   m_Layer: 0
-  m_Name: PlayerContainer
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2982,7 +2974,7 @@ Transform:
   - {fileID: 7009835058480662620}
   - {fileID: 1592180013}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1592180012
 GameObject:
@@ -3044,7 +3036,7 @@ GameObject:
   - component: {fileID: 1620001569}
   - component: {fileID: 1620001570}
   m_Layer: 0
-  m_Name: Block (3)
+  m_Name: DownBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3058,7 +3050,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1620001567}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.83, y: -10.94, z: 13.674863}
+  m_LocalPosition: {x: -5.83, y: -10.88, z: 13.674863}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 544202052}
@@ -3113,7 +3105,7 @@ GameObject:
   - component: {fileID: 1687032415}
   - component: {fileID: 1687032416}
   m_Layer: 0
-  m_Name: Block (1)
+  m_Name: Left_Block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3127,7 +3119,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687032414}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.439681, y: 0.6411915, z: 13.679967}
+  m_LocalPosition: {x: -7.6, y: -0.29, z: 13.679967}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 544202052}
@@ -3146,7 +3138,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.4700867, y: -0.5567956}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3157,7 +3149,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7388408, y: 11.22807}
+  m_Size: {x: 0.7388408, y: 12.349422}
   m_EdgeRadius: 0
 --- !u!1 &1697012850
 GameObject:
@@ -3448,8 +3440,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1901355378}
-        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
+      - m_Target: {fileID: 870625612}
+        m_TargetAssemblyTypeName: FirstGameGameManager, Assembly-CSharp
         m_MethodName: MoveToMenu
         m_Mode: 1
         m_Arguments:
@@ -3498,49 +3490,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1870190051}
   m_CullTransparentMesh: 1
---- !u!1 &1901355377
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1901355379}
-  - component: {fileID: 1901355378}
-  m_Layer: 0
-  m_Name: ButtonController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1901355378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1901355377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bdfa51469b627c4290590c611d50f59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1901355379
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1901355377}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1907370529
 GameObject:
   m_ObjectHideFlags: 0
@@ -3727,6 +3676,36 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &2009198125
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2009198126}
+  m_Layer: 5
+  m_Name: =======GAMEPLAY========
+  m_TagString: EditorOnly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2009198126
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009198125}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2039774088
 GameObject:
   m_ObjectHideFlags: 0
@@ -3826,7 +3805,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: d027340f5e903ac4a865107980452a36, type: 2}
     - target: {fileID: 486195637235130491, guid: d7aa061195bada44e8dbebda9cbfeca3, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 486195637235130491, guid: d7aa061195bada44e8dbebda9cbfeca3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3931,7 +3910,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4647320286377660767, guid: 8ff5d49bca80865409193d99f8eca3f1, type: 3}
       propertyPath: m_Name
-      value: Brick
+      value: Brick_TouchBall
       objectReference: {fileID: 0}
     - target: {fileID: 6822293044810605067, guid: 8ff5d49bca80865409193d99f8eca3f1, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3992,7 +3971,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7009835058519499626, guid: 73d0f270c3c2cd442a3a8b784c00c36b, type: 3}
       propertyPath: m_Name
-      value: Player
+      value: PlayerPrefab
       objectReference: {fileID: 0}
     - target: {fileID: 7009835058519499626, guid: 73d0f270c3c2cd442a3a8b784c00c36b, type: 3}
       propertyPath: m_TagString
